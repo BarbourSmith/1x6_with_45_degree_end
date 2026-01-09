@@ -4,6 +4,13 @@
   "y": 0,
   "uniqueID": "id-2056",
   "name": "1x6_with_45_degree_end",
+  "ioValues": [
+    {
+      "name": "Length",
+      "ioValue": 1000,
+      "currentEquation": "1000"
+    }
+  ],
   "topLevel": true,
   "allAtoms": [
     {
@@ -628,9 +635,27 @@
         }
       ],
       "fileTypeVersion": 1
+    },
+    {
+      "atomType": "Input",
+      "x": 0.025384615384615384,
+      "y": 0.37047353760445684,
+      "uniqueID": "id-2175",
+      "name": "Length"
     }
   ],
-  "allConnectors": [],
+  "allConnectors": [
+    {
+      "ap2Name": "number or geometry",
+      "ap1ID": "id-2059",
+      "ap2ID": "id-2057"
+    },
+    {
+      "ap2Name": "Length",
+      "ap1ID": "id-2175",
+      "ap2ID": "id-2059"
+    }
+  ],
   "unitsKey": "MM",
   "fileTypeVersion": 1,
   "filetypeVersion": 1
